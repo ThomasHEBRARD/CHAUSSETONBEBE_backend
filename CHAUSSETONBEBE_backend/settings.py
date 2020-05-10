@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +70,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'chaussetonbebe_backend.wsgi.application'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
