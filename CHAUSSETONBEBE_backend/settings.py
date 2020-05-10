@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'CHAUSSETONBEBE_backend.urls'
+ROOT_URLCONF = 'chaussetonbebe_backend.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'CHAUSSETONBEBE_backend.wsgi.application'
+WSGI_APPLICATION = 'chaussetonbebe_backend.wsgi.application'
 
 
 # Database
@@ -118,3 +118,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+ 
