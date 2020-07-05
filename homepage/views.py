@@ -1,12 +1,14 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from rest_framework.viewsets import ViewSet
-from .serializers import HomepageSerializer
-from .models import TestModel
+from rest_framework import generics
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.permissions import IsAuthenticated
+from .serializers import HomePageSerializer
+from .models import HomePageModel
 
 
-def HomepageView(ViewSet):
-    return HttpResponse("Hello world")
+class HomePageViewSet(generics.ListCreateAPIView):
+    queryset = HomePageModel.objects.all()
+    serializer_class = HomePageSerializer
 
-    
-    
+class HomePageViewSetDetailed(generics.RetrieveUpdateDestroyAPIView):
+    queryset = HomePageModel.objects.all()
+    serializer_class = HomePageSerializer

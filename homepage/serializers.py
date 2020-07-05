@@ -1,7 +1,9 @@
 from rest_framework import serializers
-from .models import TestModel
+from .models import HomePageModel
 
-class HomepageSerializer(serializers.ModelSerializer):
+
+class HomePageSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TestModel
-        fields = ('id', 'name', 'code')
+        model = HomePageModel
+        fields = '__all__'
+
