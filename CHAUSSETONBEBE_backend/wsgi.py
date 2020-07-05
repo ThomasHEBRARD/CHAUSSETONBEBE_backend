@@ -1,5 +1,5 @@
 """
-WSGI config for CHAUSSETONBEBE_backend project.
+WSGI config for chaussetonbebe_backend project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

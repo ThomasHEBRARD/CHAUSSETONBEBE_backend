@@ -1,5 +1,5 @@
 """
-ASGI config for CHAUSSETONBEBE_backend project.
+ASGI config for chaussetonbebe_backend project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
