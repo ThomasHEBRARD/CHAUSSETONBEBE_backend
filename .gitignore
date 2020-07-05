@@ -109,8 +109,6 @@ venv.bak/
 # vscode
 .vscode/
 
-# static directory
-pricemoov_backend/static/
 
 # Mac files
 .DS_Store
@@ -120,7 +118,5 @@ pricemoov_backend/static/
 .private/
 .private/*
 
-temp
 
-#docker
-docker-compose.yml
+
