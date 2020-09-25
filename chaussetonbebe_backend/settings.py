@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'business',
     'corsheaders',
+    'martor',
+    'gunicorn'
 ]
 
 MIDDLEWARE = [
