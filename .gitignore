@@ -119,4 +119,4 @@ venv.bak/
 .private/*
 
 
-
+.pyc/
