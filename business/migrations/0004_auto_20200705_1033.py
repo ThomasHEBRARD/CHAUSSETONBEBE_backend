@@ -6,22 +6,22 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('homepage', '0003_auto_20200705_0949'),
+        ('business', '0003_auto_20200705_0949'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='homepagemodel',
+            model_name='businessmodel',
             name='title',
             field=models.CharField(default='DefaultTile', max_length=250),
         ),
         migrations.AlterField(
-            model_name='homepagemodel',
+            model_name='businessmodel',
             name='code',
             field=models.CharField(default='DefaultCode', max_length=100),
         ),
         migrations.AlterField(
-            model_name='homepagemodel',
+            model_name='businessmodel',
             name='name',
             field=models.CharField(default='DefaultName', max_length=100),
         ),
