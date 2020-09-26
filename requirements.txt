@@ -6,4 +6,5 @@ django-cors-headers
 gunicorn
 martor
 pillow
+psycopg2==2.8.4
 pylint==2.1.1
