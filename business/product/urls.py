@@ -3,6 +3,6 @@ from rest_framework.routers import SimpleRouter
 from business.product.product.views import ProductViewSet
 
 router = SimpleRouter()
-router.register(r"product", ProductViewSet)
+router.register(r"products", ProductViewSet)
 
 urlpatterns = [re_path(r"^", include(router.urls))]
