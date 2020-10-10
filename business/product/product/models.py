@@ -5,7 +5,7 @@ from django.core.validators import MinValueValidator
 
 
 def upload_to_path(instance, filename):
-    return "/".join(["business/product/images/", instance.code + filename.split(".")[-1]])
+    return "/".join(["business/product/images/", instance.code + "." + filename.split(".")[-1]])
 
 
 class Product(BaseModel):
