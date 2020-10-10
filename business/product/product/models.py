@@ -3,8 +3,10 @@ from business.shared.models import BaseModel
 from business.product.product_group.models import ProductGroup
 from django.core.validators import MinValueValidator
 
+
 def upload_to_path(instance, filename):
     return "/".join(["business/product/images/", instance.code + filename.split(".")[-1]])
+
 
 class Product(BaseModel):
     price = models.DecimalField(
