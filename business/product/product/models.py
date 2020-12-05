@@ -21,6 +21,7 @@ class Product(BaseModel):
     stock = models.IntegerField(blank=True, null=True)
     is_linked = models.BooleanField(default=True)
     image = models.ImageField(blank=True, null=True, upload_to=upload_to_path)
+    # image should be "business/product/images/name_file.theextension"
     group = models.ForeignKey(
         ProductGroup, related_name="entries", on_delete=models.DO_NOTHING, blank=False, null=False
     )
